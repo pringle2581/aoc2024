@@ -18,7 +18,7 @@
                     string[] num = line.Split("   ");
                     left.Add(int.Parse(num[0]));
                     right.Add(int.Parse(num[1]));
-                    rightdict[int.Parse(num[1])] = 1 + (rightdict.TryGetValue(int.Parse(num[1]), out int result) ? result : 0);
+                    rightdict[int.Parse(num[1])] = 1 + rightdict.GetValueOrDefault(int.Parse(num[1]), 0);
                 }
             }
 
@@ -29,7 +29,7 @@
                 for (int i = 0; i < left.Count; i++)
                 {
                     part1 += Math.Abs(left[i] - right[i]);
-                    part2 += left[i] * (rightdict.TryGetValue(left[i], out int result) ? result : 0);
+                    part2 += left[i] * rightdict.GetValueOrDefault(left[i], 0);
                 }
             }
         }

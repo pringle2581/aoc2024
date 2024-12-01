@@ -2,10 +2,10 @@
 
 string input = "../../../input/";
 
-static void PrintResults(int day, string[] results)
+static void PrintResults(string day, string[] results)
 {
     Console.WriteLine($"Day {day} Part 1: {results[0]}");
     Console.WriteLine($"Day {day} Part 2: {results[1]}\n");
 }
 
-PrintResults(1, Day01.Solve(File.ReadAllLines(input + "01")));
+PrintResults("01", Day01.Solve(File.ReadAllLines(input + "01")));
