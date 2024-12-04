@@ -11,3 +11,4 @@ static void PrintResults(string day, string[] results)
 PrintResults("01", Day01.Solve(File.ReadAllLines(input + "01")));
 PrintResults("02", Day02.Solve(File.ReadAllLines(input + "02")));
 PrintResults("03", Day03.Solve(File.ReadAllLines(input + "03")));
+PrintResults("04", Day04.Solve(File.ReadAllLines(input + "04")));
