@@ -15,3 +15,4 @@ PrintResults("04", Day04.Solve(File.ReadAllLines(input + "04")));
 PrintResults("05", Day05.Solve(File.ReadAllLines(input + "05")));
 PrintResults("06", Day06.Solve(File.ReadAllLines(input + "06")));
 PrintResults("07", Day07.Solve(File.ReadAllLines(input + "07")));
+PrintResults("08", Day08.Solve(File.ReadAllLines(input + "08")));
