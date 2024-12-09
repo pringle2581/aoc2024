@@ -4,7 +4,6 @@
     {
         static public string[] Solve(string[] input)
         {
-            string[] sample = "............\r\n........0...\r\n.....0......\r\n.......0....\r\n....0.......\r\n......A.....\r\n............\r\n............\r\n........A...\r\n.........A..\r\n............\r\n............".Split("\r\n");
             int mapsize;
             Dictionary<char, List<(int, int)>> antennae = [];
             Parse(input);
